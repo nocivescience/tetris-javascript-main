@@ -62,3 +62,13 @@ class Piece{
         })
     }
 }
+const canvas=document.getElementById('game');
+const ctx=canvas.getContext('2d');
+ctx.scale(blockSideLength,blockSideLength);
+function prueba(){
+    ctx.fillStyle='black';
+    ctx.fillRect(0,0,10,10);
+    ctx.strokeStyle='white';
+    ctx.strokeRect(0,0,10,10);
+}
+prueba();
